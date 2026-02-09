@@ -4,14 +4,11 @@ This repository contains a complete **Yocto-based Embedded Linux project**
 for monitoring fuel tank levels and generating refill alerts.
 The project integrates custom application code with the Yocto Project build system.
 
----
 
-## 📁 Repository Structure
+Repository Structure
 
 
----
-
-## 🧠 Project Overview
+Project Overview
 
 The system is designed to:
 - Monitor fuel tank levels using sensors
@@ -21,9 +18,8 @@ The system is designed to:
 
 The build system is based on **Yocto Project (Kirkstone branch)**.
 
----
 
-## 🛠 Application Code (`codes/`)
+Application Code (`codes/`)
 
 The `codes/` directory contains user-space applications and scripts, such as:
 - Sensor data collection
@@ -35,25 +31,22 @@ Example:
 - `mqtt_pub.c`
 - `start_system.sh`
 
----
 
-## 🧱 Yocto Layers
+Yocto Layers
 
-### `poky/`
+`poky/` 
 - Core Yocto Project reference distribution
 - Provides BitBake, OpenEmbedded-Core, and build tools
 
-### `meta-openembedded/`
+`meta-openembedded/`
 - Community-maintained OpenEmbedded layers
 - Provides additional recipes and packages (multimedia, networking, etc.)
 
----
 
-## ⚙️ Build Instructions (Basic)
+Build Instructions (Basic)
 
-> Prerequisite: Linux host system with required Yocto dependencies installed.
+Prerequisite: Linux host system with required Yocto dependencies installed.
 
-```bash
 cd poky
 source oe-init-build-env
 Add layers (if not already added):
